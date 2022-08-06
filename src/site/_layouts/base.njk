@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'partials/head.njk' %}
+  </head>
+  <body class="h-screen bg-slate-800">
+    {{ content | safe }}
+
+    <script type="module" src="{{ '/assets/main.js' | cacheBust | url }}"></script>
+  </body>
+</html>

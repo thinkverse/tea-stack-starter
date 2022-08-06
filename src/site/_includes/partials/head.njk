@@ -1,0 +1,20 @@
+<title>{{ site.title | concat(title, '|') }}</title>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+
+<meta name="generator" content="{{ eleventy.generator }}">
+
+<link rel="icon" href="{{ site.favicon | url }}">
+
+<meta name="title" content="{{ site.title }}">
+<meta name="description" content="{{ site.description }}">
+
+{% if canonical %}
+<link rel="canonical" href="{{ canonical }}">
+{% endif %}
+
+<link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | cacheBust | url }}">
+{% block head %}{% endblock %}

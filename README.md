@@ -9,8 +9,12 @@ This repo contains a 11ty starter for Tailwind CSS, Eleventy and Alpine.js, buil
 
 ## Usage
 
-Click [Use this template](https://github.com/thinkverse/tea-stack-starter/generate) to create your own repository based 
-on this starter template. Clone your version locally using your perferred method, I recommend [GitHub CLI](https://cli.github.com/).
+- Click [Use this template](https://github.com/thinkverse/tea-stack-starter/generate) to create your own repository based 
+on this starter template.
+- Clone your version locally using your perferred method, I recommend [GitHub CLI](https://cli.github.com/).
+- Set your [GitHub Pages](./../../settings/pages) source to use [GitHub Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) instead of *Deploy from a branch*.
+
+Now whenever you push to `main` the workflow - [.gh-pages.yml](./.github/workflows/gh-pages.yml), will rebuild your site and deploy it.
 
 ## NPM commands
 
